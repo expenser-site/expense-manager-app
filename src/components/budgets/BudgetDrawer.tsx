@@ -225,8 +225,9 @@ export const BudgetDrawer = ({
 			<DrawerContent className="sm:max-w-lg md:max-w-xl mx-auto max-h-[95vh] overflow-hidden flex flex-col">
 				<DrawerHeader className="border-b flex-shrink-0 px-4 md:px-6 pt-3 md:pt-4 pb-2 md:pb-3">
 					<DrawerTitle className="text-xl md:text-2xl font-bold">
-					{isEditing ? 'Edit Budget' : 'Add New Budget'}
-
+						{isEditing ? 'Edit Budget' : 'Add New Budget'}
+					</DrawerTitle>
+				</DrawerHeader>
 				<form onSubmit={handleSubmit} className="flex flex-col flex-1 min-h-0">
 					<ScrollArea className="flex-1 px-4 md:px-6 overflow-y-auto">
 						<div className="space-y-3 md:space-y-4 py-4 pb-[calc(env(safe-area-inset-bottom)+1.5rem)]">

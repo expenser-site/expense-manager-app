@@ -27,7 +27,6 @@ import {
 	Facebook,
 	Heart,
 	Code,
-	TrendingDown,
 } from 'lucide-react';
 
 export const Layout = () => {
@@ -39,7 +38,6 @@ export const Layout = () => {
 		prefetchDashboard,
 		prefetchExpenses,
 		prefetchCategories,
-		prefetchBudgets,
 	} = usePrefetchOnHover();
 
 	// Monitor network status
@@ -67,12 +65,6 @@ export const Layout = () => {
 			icon: Receipt,
 			label: 'Expenses',
 			prefetch: prefetchExpenses,
-		},
-		{
-			path: '/budgets',
-			icon: TrendingDown,
-			label: 'Budgets',
-			prefetch: prefetchBudgets,
 		},
 		{
 			path: '/categories',
